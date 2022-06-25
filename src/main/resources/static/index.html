@@ -89,7 +89,7 @@
                 method: "get",
                 success: (s) => {
                     s.forEach((element, index) => {
-                        output += "<li class='list-group-item'><a target='_blank' href='/todo/" + (index + 1) + "'>" + element.todo;
+                        output += "<li class='list-group-item'><a href='/view/todo/" + (index + 1) + "'>" + element.todo;
                         output += "</a><button type='button' class='btn btn-danger btn-sm delete' data-toggle='modal' data-target='#delete' data-id='" + (index + 1) + "'>X</button></li>"
                     });
 
